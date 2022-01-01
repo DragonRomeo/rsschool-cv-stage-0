@@ -21,5 +21,33 @@ body {
       display: flex; /*Флексы вкл */
       justify-content: flex-end; /*Сдвигает вправо*/
       align-items: center; /*выровнять по центру по высоте */
+      list-style: none;  /*Убираем стандартные маркеры */
   }
+  html { /*Плавная прокрутка (для навигации по сссылкам) */
+    scroll-behavior: smooth; 
+  }
+  .nav-link { /*Добавляем отступы между элементами списка */
+    padding: 0 20px;
+    line-height: 50px;
+  }
+.section {
 
+}
+.section-title {
+
+}
+
+.main-container { /*Распологает сиви в 2 колонки на одной страницы*/
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .section { /*указывает, что именно секция займет пол страницы */
+    width: 50%;
+  }
+  @media (max-width: 768px) { /* Адаптация под смартфоны. Ширина вернется на 100%,
+    если экран будет меньше 768 пикселей */
+    .section {
+      width: 100%;
+    }
+  }
