@@ -13,7 +13,7 @@ body {
 * {
     box-sizing: border-box;
   }
-  .container { /*Огранические ширины контейнера */
+  .container { /*Ограничение ширины контейнера */
       max-width: 1440px;
       margin: 0 auto;
   }
