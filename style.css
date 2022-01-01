@@ -13,3 +13,13 @@ body {
 * {
     box-sizing: border-box;
   }
+  .container { /*Огранические ширины контейнера */
+      max-width: 1440px;
+      margin: 0 auto;
+  }
+  .nav-list { /*Он делает навигаю в одну строку. Надо подумать, стоит ли такое оставлять на релизе.  */
+      display: flex; /*Флексы вкл */
+      justify-content: flex-end; /*Сдвигает вправо*/
+      align-items: center; /*выровнять по центру по высоте */
+  }
+
