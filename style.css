@@ -7,7 +7,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /*Проработать размеры шрифтов */
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+    /* -------- */
     border: 1px solid rgb(0, 119, 255) /*Добавил для отображения блоков.(Потом убрать) */
+    
     
 }
 * {
@@ -33,8 +40,12 @@ body {
 .section {
 
 }
-.section-title {
-
+.section-title { /*Стиль заголовка */
+  font-size: 22px;
+  font-weight: 4000;
+  /*text-transform: uppercase; */
+  letter-spacing: 2px;
+  color:black;
 }
 
 .main-container { /*Распологает сиви в 2 колонки на одной страницы*/
@@ -50,4 +61,34 @@ body {
     .section {
       width: 100%;
     }
+  }
+  .link { /* Link style */
+    text-decoration: none;
+    color: #829985;
+    transition: color 0.5s;
+  }
+  /* Link style too */
+  .link:hover {
+    color:bisque;
+  }
+  .img {
+    width: 150px;
+    height: 300px;
+
+  }
+  /*Псевдоэлементы: подчёркивание*/
+  .section-item { 
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .section-item::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    width: 10px;
+    height: 10px; 
+    border: 1px solid #829985;
+    border-radius: 50%;
   }
