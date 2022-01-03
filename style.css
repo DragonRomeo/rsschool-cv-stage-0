@@ -3,17 +3,18 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     /*Проработать размеры шрифтов */
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
     color: black;
     /* -------- */
-    border: 1px solid rgb(0, 119, 255) /*Добавил для отображения блоков.(Потом убрать) */
+    
     
     
 }
@@ -29,6 +30,10 @@ body {
       justify-content: flex-end; /*Сдвигает вправо*/
       align-items: center; /*выровнять по центру по высоте */
       list-style: none;  /*Убираем стандартные маркеры */
+      border: 2px solid black; /*Добавил для отображения блоков.(Потом убрать) */
+      border-radius: 20px;
+      
+    
   }
   html { /*Плавная прокрутка (для навигации по сссылкам) */
     scroll-behavior: smooth; 
@@ -51,6 +56,7 @@ body {
 .main-container { /*Распологает сиви в 2 колонки на одной страницы*/
     display: flex;
     flex-wrap: wrap;
+    border: 1px solid rgb(0, 119, 255) /*Добавил для отображения блоков.(Потом убрать) */
   }
   
   .section { /*указывает, что именно секция займет пол страницы */
