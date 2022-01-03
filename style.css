@@ -72,7 +72,9 @@ body {
     color:bisque;
   }
   .img {
-   
+   height: 298;
+   width: 359;
+   border-radius: 149px;
 
   }
   /*Псевдоэлементы: подчёркивание*/
