@@ -1,3 +1,105 @@
-.first {
-    font-size: 100px;
+body {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*Проработать размеры шрифтов */
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+    /* -------- */
+    
+    
+    
 }
+* {
+    box-sizing: border-box;
+  }
+  .container { /*Ограничение ширины контейнера */
+      max-width: 1440px;
+      margin: 0 auto;
+  }
+  .nav-list { /*Он делает навигаю в одну строку. Надо подумать, стоит ли такое оставлять на релизе.  */
+      display: flex; /*Флексы вкл */
+      justify-content: flex-end; /*Сдвигает вправо*/
+      align-items: center; /*выровнять по центру по высоте */
+      list-style: none;  /*Убираем стандартные маркеры */
+      border: 2px solid black; /*Добавил для отображения блоков.(Потом убрать) */
+      border-radius: 20px;
+      
+    
+  }
+  html { /*Плавная прокрутка (для навигации по сссылкам) */
+    scroll-behavior: smooth; 
+  }
+  .nav-link { /*Добавляем отступы между элементами списка */
+    padding: 0 20px;
+    line-height: 50px;
+  }
+  
+.section { /*указывает, что именно секция займет пол страницы */
+  width: 50%;
+}
+.section-title { /*Стиль заголовка */
+  font-size: 22px;
+  font-weight: 4000;
+  /*text-transform: uppercase; */
+  letter-spacing: 2px;
+  color:black;
+}
+.main-title {
+  font-size: 80px;
+  border-bottom: 3px solid black; /* Параметры линии под текстом */
+  padding-bottom: 5px; /* Расстояние от текста до линии */
+}
+.second-title {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+
+.main-container { /*Распологает сиви в 2 колонки на одной страницы*/
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  
+  @media (max-width: 768px) { /* Адаптация под смартфоны. Ширина вернется на 100%,
+    если экран будет меньше 768 пикселей */
+    .section {
+      width: 100%;
+    }
+  }
+  .link { /* Link style */
+    text-decoration: none;
+    color: #829985;
+    transition: color 0.5s;
+  }
+  /* Link style too */
+  .link:hover {
+    color:bisque;
+  }
+  .img {
+   height: 298;
+   width: 359;
+   border-radius: 149px;
+
+  }
+  /*Псевдоэлементы: подчёркивание*/
+  .section-item { 
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .section-item::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    width: 10px;
+    height: 10px; 
+    border: 1px solid black;
+    border-radius: 50%;
+  }
