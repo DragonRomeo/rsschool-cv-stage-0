@@ -37,6 +37,10 @@ body {
   .nav-link { /*Добавляем отступы между элементами списка */
     padding: 0 20px;
     line-height: 50px;
+    color:darkcyan;
+    transition: color 0.5s;
+    text-decoration: none;
+    font-size: 20px;
   }
   
 .section { /*указывает, что именно секция займет пол страницы */
