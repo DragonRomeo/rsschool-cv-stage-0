@@ -73,17 +73,16 @@ body {
     }
   }
   .link { /* Link style */
-    text-decoration: none;
-    color: #829985;
+    color:darkcyan;
     transition: color 0.5s;
   }
   /* Link style too */
   .link:hover {
-    color:bisque;
+    color:deepskyblue;
   }
   .img {
-   height: 298;
-   width: 359;
+   height: 268;
+   width: 319;
    border-radius: 149px;
 
   }
